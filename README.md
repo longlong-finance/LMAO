@@ -1,6 +1,6 @@
 # Liquidity Mining As Options with ERC20 token
 
-The Liquidity Mining V2 contract that is mentioned in Andre's post (which credit also goes to podsfinance and JosephDelong) provides an interesting alternative for protocols to use. However, the PoC provided by Andre requires protocols to use a new staking contract and only designed for options liquidity mining. Naturally, this requires users to migrate to this new pool. 
+The Liquidity Mining V2 contract that is mentioned in Andre's post (which credit also goes to podsfinance and Joseph Delong) provides an interesting alternative for protocols to use. However, the PoC provided by Andre requires protocols to use a new staking contract and only designed for options liquidity mining. Naturally, this requires users to migrate to this new pool if protocols already have such pools. 
 
 Thus we built upon Andre's PoC, wrapping the option's reward amount in an ERC20. This allows protocols to drip the options token via the regular staking pools, be it the regular synthetix, masterChef, or other infrastructure that they already have (maybe Merkle tree?!). If the protocol has a modified staking pool that allows multiple reward tokens to be dripped, then their users would not need to migrate at all!
 
@@ -11,3 +11,5 @@ Thus we built upon Andre's PoC, wrapping the option's reward amount in an ERC20.
 1. User execute within expiry or let it expire.
 
 Building is fun. LMAO.
+
+LongLong.finance
