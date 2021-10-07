@@ -10,6 +10,10 @@ Thus we built upon Andre's PoC, wrapping the option's reward amount in an ERC20.
 1. User burns the option ERC20 token and mints an ERC721 token that represents the option.
 1. User execute within expiry or let it expire.
 
+Another thing we added, is a special support with Balancer's Oracle. Balancer's Oracle is not as generalized, it would restrict the buyToken and reward to be in the same pool. However, this is very suitable for protocols that are doing liquidity mining with BalancerV2! The supports comes with a separate set of contracts, both ends with `WithBal`. Please refer to the balancer tests for its usage. 
+
+Feel free to reach out and chat for clarifications. Happy to discuss with fellow developers!
+
 Building is fun. LMAO.
 
 [LongLong.finance](https://longlong.finance)
